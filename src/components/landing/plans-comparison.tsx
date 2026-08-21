@@ -71,7 +71,7 @@ export function PlansComparison() {
       <div className="container mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Compare os planos para Medianeira
+            Compare os planos para Santa Helena
           </h2>
           <p className="mt-3 text-muted-foreground">
             Todos com 550 Mega de fibra óptica, WiFi 6, instalação grátis e a{" "}
@@ -158,7 +158,7 @@ export function PlansComparison() {
               >
                 <WhatsAppLink
                   location={`plano_${plan.price}`}
-                  message={`Olá! Vim pela página de Medianeira e quero contratar o plano ${plan.name} de ${plan.speed} Mega por R$ ${plan.price}/mês com a 1ª mensalidade grátis.`}
+                  message={`Olá! Vim pela página de Santa Helena e quero contratar o plano ${plan.name} de ${plan.speed} Mega por R$ ${plan.price}/mês com a 1ª mensalidade grátis.`}
                 >
                   <MessageCircle className="h-5 w-5" />
                   Contratar R$ {plan.price}

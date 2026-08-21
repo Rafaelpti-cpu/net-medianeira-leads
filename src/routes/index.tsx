@@ -23,7 +23,7 @@ import { CoverageCheck } from "@/components/landing/coverage-check";
 import { Testimonials } from "@/components/landing/testimonials";
 import { PlansComparison } from "@/components/landing/plans-comparison";
 import { MobileCtaBar } from "@/components/landing/mobile-cta-bar";
-import { SeoKeywords, BAIRROS_MEDIANEIRA } from "@/components/landing/seo-keywords";
+import { SeoKeywords, BAIRROS_SANTA_HELENA } from "@/components/landing/seo-keywords";
 import {
   DEFAULT_MESSAGE,
   OFFER_DISCLAIMER,
@@ -33,28 +33,28 @@ import {
 } from "@/lib/lead";
 
 const TITLE =
-  "Internet Fibra em Medianeira/PR | 1ª Mensalidade Grátis | Portal Itaipu";
+  "Internet Fibra em Santa Helena/PR | 1ª Mensalidade Grátis | Portal Itaipu";
 const DESCRIPTION =
-  "1ª mensalidade grátis em Medianeira/PR: 550 Mega + WiFi 6 por R$ 109,90/mês, planos com Watch TV Canais Brasil e Max. Instalação grátis, ativação em até 24h e suporte local.";
+  "1ª mensalidade grátis em Santa Helena/PR: 550 Mega + WiFi 6 por R$ 109,90/mês, planos com Watch TV Canais Brasil e Max. Instalação grátis, ativação em até 24h e suporte local.";
 const KEYWORDS = [
-  "internet em Medianeira",
-  "internet fibra óptica Medianeira",
-  "provedor de internet Medianeira PR",
-  "internet 550 mega Medianeira",
-  "internet com WiFi 6 Medianeira",
-  "internet com TV Medianeira",
-  "internet com Max Medianeira",
-  "internet residencial Medianeira Paraná",
-  "contratar internet Medianeira",
-  "instalação de internet grátis Medianeira",
+  "internet em Santa Helena",
+  "internet fibra óptica Santa Helena",
+  "provedor de internet Santa Helena PR",
+  "internet 550 mega Santa Helena",
+  "internet com WiFi 6 Santa Helena",
+  "internet com TV Santa Helena",
+  "internet com Max Santa Helena",
+  "internet residencial Santa Helena Paraná",
+  "contratar internet Santa Helena",
+  "instalação de internet grátis Santa Helena",
   "Portal Itaipu internet",
 ].join(", ");
 
 const faqs = [
   {
-    question: "Tem disponibilidade no meu bairro em Medianeira?",
+    question: "Tem disponibilidade no meu bairro em Santa Helena?",
     answer:
-      "Nossa rede nova está expandindo por Medianeira. Informe seu bairro na consulta de cobertura ou envie seu endereço pelo WhatsApp e confirmamos a viabilidade técnica em poucos minutos.",
+      "Nossa rede nova está expandindo por Santa Helena. Informe seu bairro na consulta de cobertura ou envie seu endereço pelo WhatsApp e confirmamos a viabilidade técnica em poucos minutos.",
   },
   {
     question: "Quanto tempo leva para instalar?",
@@ -72,9 +72,9 @@ const faqs = [
       "Não. Nesta oferta, a instalação e ativação são gratuitas. Você paga apenas a mensalidade do plano contratado.",
   },
   {
-    question: "Por que escolher a Portal Itaipu em Medianeira?",
+    question: "Por que escolher a Portal Itaipu em Santa Helena?",
     answer:
-      "Somos um provedor local com suporte humanizado, 20 anos de experiência no oeste do Paraná e infraestrutura moderna em Medianeira. Todos os planos incluem Wi-Fi 6, instalação grátis e atendimento próximo, sem robôs.",
+      "Somos um provedor local com suporte humanizado, 20 anos de experiência no oeste do Paraná e infraestrutura moderna em Santa Helena. Todos os planos incluem Wi-Fi 6, instalação grátis e atendimento próximo, sem robôs.",
   },
 ];
 
@@ -85,7 +85,7 @@ export const Route = createFileRoute("/")({
       { name: "description", content: DESCRIPTION },
       { name: "keywords", content: KEYWORDS },
       { name: "geo.region", content: "BR-PR" },
-      { name: "geo.placename", content: "Medianeira, Paraná" },
+      { name: "geo.placename", content: "Santa Helena, Paraná" },
       { name: "robots", content: "index, follow, max-image-preview:large" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
@@ -107,26 +107,26 @@ export const Route = createFileRoute("/")({
           "@type": "LocalBusiness",
           name: "Portal Itaipu",
           description:
-            "Provedor de internet fibra óptica em Medianeira, Paraná.",
+            "Provedor de internet fibra óptica em Santa Helena, Paraná.",
           url: "https://portalitaipu.com.br/",
           telephone: PHONE_TEL,
           image: "https://portalitaipu.com.br/",
           keywords: KEYWORDS,
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Medianeira",
+            addressLocality: "Santa Helena",
             addressRegion: "PR",
             addressCountry: "BR",
           },
           areaServed: [
             {
               "@type": "City",
-              name: "Medianeira",
+              name: "Santa Helena",
               containedInPlace: { "@type": "State", name: "Paraná" },
             },
-            ...BAIRROS_MEDIANEIRA.map((bairro) => ({
+            ...BAIRROS_SANTA_HELENA.map((bairro) => ({
               "@type": "Place",
-              name: `${bairro}, Medianeira - PR`,
+              name: `${bairro}, Santa Helena - PR`,
             })),
           ],
           priceRange: "R$ 109,90 - R$ 129,90",
@@ -198,7 +198,7 @@ function Header() {
         <a href="/" className="flex items-center gap-2">
           <img
             src={logoAsset.url}
-            alt="Portal Itaipu — internet fibra óptica em Medianeira/PR"
+            alt="Portal Itaipu — internet fibra óptica em Santa Helena/PR"
             className="h-9 w-auto"
             width="1733"
             height="593"
@@ -220,7 +220,7 @@ function Header() {
           >
             <WhatsAppLink
               location="header"
-              message="Olá! Vi a campanha do Google e quero contratar internet em Medianeira/PR."
+              message="Olá! Vi a campanha do Google e quero contratar internet em Santa Helena/PR."
             >
               <MessageCircle className="h-4 w-4" />
               WhatsApp
@@ -243,11 +243,11 @@ function HeroSection() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-magenta opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-magenta"></span>
               </span>
-              Rede nova em Medianeira/PR
+              Rede nova em Santa Helena/PR
             </div>
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">
               Internet fibra em{" "}
-              <span className="text-brand-magenta">Medianeira</span> com 1ª
+              <span className="text-brand-magenta">Santa Helena</span> com 1ª
               mensalidade grátis
             </h1>
             <p className="text-lg text-muted-foreground md:text-xl">
@@ -420,7 +420,7 @@ function BenefitsSection() {
             Por que contratar a Portal Itaipu?
           </h2>
           <p className="mt-3 text-muted-foreground">
-            A escolha certa para quem quer internet de qualidade em Medianeira.
+            A escolha certa para quem quer internet de qualidade em Santa Helena.
           </p>
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -457,7 +457,7 @@ function TrustSection() {
     },
     {
       icon: MapPin,
-      title: "Rede nova em Medianeira",
+      title: "Rede nova em Santa Helena",
       description: "Infraestrutura moderna e de alta capacidade para a cidade.",
     },
     {
@@ -476,7 +476,7 @@ function TrustSection() {
               Provedor local, tecnologia de ponta
             </h2>
             <p className="mt-4 text-lg text-white/80">
-              A Portal Itaipu chegou em Medianeira com uma rede totalmente nova,
+              A Portal Itaipu chegou em Santa Helena com uma rede totalmente nova,
               pronta para entregar a velocidade e estabilidade que sua casa
               precisa.
             </p>
@@ -488,7 +488,7 @@ function TrustSection() {
               >
                 <WhatsAppLink
                   location="trust"
-                  message="Olá! Moro em Medianeira/PR e quero saber se tem disponibilidade na minha rua."
+                  message="Olá! Moro em Santa Helena/PR e quero saber se tem disponibilidade na minha rua."
                 >
                   <MessageCircle className="h-5 w-5" />
                   Ver disponibilidade
@@ -577,7 +577,7 @@ function FinalCtaSection() {
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/90">
               Contrate 550 Mega + WiFi 6 por R$ 109,90/mês e ganhe a 1ª
               mensalidade grátis, com instalação grátis e ativação em até 24h em
-              Medianeira/PR.
+              Santa Helena/PR.
             </p>
             <p className="mx-auto mt-3 max-w-2xl text-xs text-white/70">
               {OFFER_DISCLAIMER}
@@ -647,7 +647,7 @@ function Footer() {
               © 2026 Portal Itaipu. Todos os direitos reservados.
             </p>
             <p className="mt-1">
-              Medianeira/PR • Internet Fibra Óptica de qualidade
+              Santa Helena/PR • Internet Fibra Óptica de qualidade
             </p>
           </div>
         </div>

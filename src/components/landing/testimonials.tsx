@@ -3,17 +3,17 @@ import { Star } from "lucide-react";
 const testimonials = [
   {
     name: "Tayná Carolina",
-    place: "Avaliação no Google • Medianeira",
+    place: "Avaliação no Google",
     text: "Muito boa a minha experiência com a portal, sempre muito prestativos e resolver rapidamente quando acontece algum problema",
   },
   {
     name: "Janice Bellon",
-    place: "Avaliação no Google • Medianeira",
+    place: "Avaliação no Google",
     text: "Foi excelente, fiquei satisfeita com o atendimento",
   },
   {
     name: "Thiago",
-    place: "Avaliação no Google • Medianeira",
+    place: "Avaliação no Google",
     text: "Melhor internet da região",
   },
 ];
@@ -32,7 +32,7 @@ export function Testimonials() {
             ))}
           </div>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Quem já é cliente em Medianeira
+            Quem já é cliente Portal Itaipu
           </h2>
           <p className="mt-3 text-muted-foreground">
             Avaliações reais de moradores atendidos pela nossa rede nova.

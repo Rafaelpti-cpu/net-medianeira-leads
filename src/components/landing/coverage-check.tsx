@@ -8,17 +8,17 @@ import { buildWhatsAppLink, trackLead } from "@/lib/lead";
 
 const BAIRROS = [
   "Centro",
-  "São Cristóvão",
-  "Belo Horizonte",
-  "Condá",
   "Cidade Alta",
-  "Frimesa",
-  "Nazaré",
-  "Ipê",
-  "Jardim Irene",
-  "Independência",
-  "Itaipu",
-  "Panorâmico",
+  "Cidade Nova",
+  "São Luís",
+  "Vila Rica",
+  "Jardim Acácia",
+  "Jardim Floresta",
+  "Alto Alegre",
+  "Bela Vista",
+  "Moreninha",
+  "Navegantes",
+  "Loteamento Alvorada",
 ];
 
 function formatPhone(value: string) {
@@ -42,11 +42,11 @@ export function CoverageCheck() {
     event.preventDefault();
     if (!phoneValid) return;
     trackLead("coverage_form_submit", { bairro: bairro || "nao_informado" });
-    const message = `Olá! Vim pela página de Medianeira e quero contratar com a 1ª mensalidade grátis. Meu nome é ${
+    const message = `Olá! Vim pela página de Santa Helena e quero contratar com a 1ª mensalidade grátis. Meu nome é ${
       nome || "(não informado)"
     }, meu WhatsApp é ${telefone} e moro no bairro ${
       bairro || "(não informado)"
-    } em Medianeira/PR.`;
+    } em Santa Helena/PR.`;
     window.open(buildWhatsAppLink(message), "_blank", "noopener,noreferrer");
   };
 
@@ -98,17 +98,17 @@ export function CoverageCheck() {
               ) : null}
             </div>
             <div className="space-y-2 sm:col-span-2">
-              <Label htmlFor="bairro">Seu bairro em Medianeira</Label>
+              <Label htmlFor="bairro">Seu bairro em Santa Helena</Label>
               <Input
                 id="bairro"
                 value={bairro}
                 onChange={(e) => setBairro(e.target.value)}
                 placeholder="Ex: Centro, Ipê, Nazaré"
                 className="h-12"
-                list="bairros-medianeira"
+                list="bairros-santa-helena"
                 required
               />
-              <datalist id="bairros-medianeira">
+              <datalist id="bairros-santa-helena">
                 {BAIRROS.map((b) => (
                   <option key={b} value={b} />
                 ))}
@@ -116,7 +116,7 @@ export function CoverageCheck() {
             </div>
             <div className="sm:col-span-2">
               <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                Bairros atendidos em Medianeira (referência)
+                Bairros atendidos em Santa Helena (referência)
               </p>
               <div className="mb-5 flex flex-wrap gap-2">
                 {BAIRROS.map((b) => (

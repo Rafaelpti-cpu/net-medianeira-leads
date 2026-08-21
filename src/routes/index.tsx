@@ -17,7 +17,9 @@ import {
   MessageCircle,
   Phone,
   Check,
+  Star,
 } from "lucide-react";
+import lojaAsset from "@/assets/loja-portal-itaipu.png.asset.json";
 import { WhatsAppLink } from "@/components/landing/cta-link";
 import { CoverageCheck } from "@/components/landing/coverage-check";
 import { Testimonials } from "@/components/landing/testimonials";

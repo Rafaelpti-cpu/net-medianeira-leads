@@ -6,15 +6,21 @@ export const BAIRROS_SANTA_HELENA = [
   "Centro",
   "Cidade Alta",
   "Cidade Nova",
-  "São Luís",
+  "Vila Nova",
   "Vila Rica",
+  "São Luís",
   "Jardim Acácia",
   "Jardim Floresta",
   "Alto Alegre",
   "Bela Vista",
   "Moreninha",
   "Navegantes",
+  "Marinas",
+  "Parque Verde",
+  "Terra das Águas",
   "Loteamento Alvorada",
+  "BNH",
+  "Conjunto Padre Martinho",
 ];
 
 const searchTerms = [

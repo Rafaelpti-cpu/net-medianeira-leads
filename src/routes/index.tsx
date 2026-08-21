@@ -451,24 +451,6 @@ function BenefitsSection() {
 }
 
 function TrustSection() {
-  const items = [
-    {
-      icon: ShieldCheck,
-      title: "20 anos de experiência",
-      description: "Referência no oeste do Paraná em telecomunicações.",
-    },
-    {
-      icon: MapPin,
-      title: "Rede nova em Santa Helena",
-      description: "Infraestrutura moderna e de alta capacidade para a cidade.",
-    },
-    {
-      icon: Phone,
-      title: "Atendimento local",
-      description: "Fale com quem conhece a região e resolve com agilidade.",
-    },
-  ];
-
   return (
     <section className="bg-brand-dark px-4 py-16 text-white">
       <div className="container mx-auto max-w-6xl">

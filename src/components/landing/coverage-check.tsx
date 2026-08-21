@@ -105,10 +105,10 @@ export function CoverageCheck() {
                 onChange={(e) => setBairro(e.target.value)}
                 placeholder="Ex: Centro, Ipê, Nazaré"
                 className="h-12"
-                list="bairros-medianeira"
+                list="bairros-santa-helena"
                 required
               />
-              <datalist id="bairros-medianeira">
+              <datalist id="bairros-santa-helena">
                 {BAIRROS.map((b) => (
                   <option key={b} value={b} />
                 ))}

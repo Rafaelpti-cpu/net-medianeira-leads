@@ -2,34 +2,37 @@ import { MessageCircle } from "lucide-react";
 import { WhatsAppLink } from "@/components/landing/cta-link";
 import { DEFAULT_MESSAGE } from "@/lib/lead";
 
-export const BAIRROS_MEDIANEIRA = [
+export const BAIRROS_SANTA_HELENA = [
   "Centro",
-  "São Cristóvão",
-  "Belo Horizonte",
-  "Condá",
   "Cidade Alta",
-  "Frimesa",
-  "Nazaré",
-  "Ipê",
-  "Jardim Irene",
-  "Independência",
-  "Itaipu",
-  "Panorâmico",
+  "Cidade Nova",
+  "São Luís",
+  "Vila Rica",
+  "Jardim Acácia",
+  "Jardim Floresta",
+  "Alto Alegre",
+  "Bela Vista",
+  "Moreninha",
+  "Navegantes",
+  "Loteamento Alvorada",
 ];
 
 const searchTerms = [
-  "internet em Medianeira",
-  "internet fibra óptica Medianeira PR",
-  "melhor provedor de internet em Medianeira",
-  "internet 550 mega Medianeira",
-  "internet barata em Medianeira",
-  "internet com WiFi 6 Medianeira",
-  "internet com TV em Medianeira",
-  "internet com Max Medianeira",
-  "internet para jogos em Medianeira",
-  "internet residencial Medianeira Paraná",
-  "instalação de internet grátis Medianeira",
-  "plano de internet 109,90 Medianeira",
+  "internet em Santa Helena",
+  "internet fibra óptica Santa Helena PR",
+  "melhor provedor de internet em Santa Helena",
+  "internet 550 mega Santa Helena",
+  "internet barata em Santa Helena",
+  "internet com WiFi 6 Santa Helena",
+  "internet com TV em Santa Helena",
+  "internet com Max Santa Helena",
+  "internet para jogos em Santa Helena",
+  "internet residencial Santa Helena Paraná",
+  "instalação de internet grátis Santa Helena",
+  "plano de internet 109,90 Santa Helena",
+  "internet rápida Santa Helena",
+  "provedor de internet Santa Helena Paraná",
+  "internet fibra Santa Helena PR",
 ];
 
 export function SeoKeywords() {
@@ -37,14 +40,14 @@ export function SeoKeywords() {
     <section id="cobertura-bairros" className="bg-muted/40 px-4 py-16">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-2xl font-bold tracking-tight text-foreground md:text-3xl">
-          Internet fibra óptica em Medianeira/PR: cobertura, planos e preços
+          Internet fibra óptica em Santa Helena/PR: cobertura, planos e preços
         </h2>
         <p className="mt-4 text-muted-foreground">
           A Portal Itaipu é um provedor de internet local em{" "}
-          <strong className="text-foreground">Medianeira, Paraná</strong>, com
+          <strong className="text-foreground">Santa Helena, Paraná</strong>, com
           rede de fibra óptica nova, WiFi 6 incluso e atendimento humanizado.
           Se você está procurando{" "}
-          <strong className="text-foreground">internet para contratar em Medianeira</strong>
+          <strong className="text-foreground">internet para contratar em Santa Helena</strong>
           , temos planos de 550 Mega a partir de R$ 109,90/mês, com opções de{" "}
           <strong className="text-foreground">internet com TV (Watch TV Canais Brasil)</strong>{" "}
           e <strong className="text-foreground">internet com Max</strong>,
@@ -52,14 +55,14 @@ export function SeoKeywords() {
         </p>
 
         <h3 className="mt-10 text-lg font-bold text-foreground">
-          Bairros atendidos em Medianeira
+          Bairros atendidos em Santa Helena
         </h3>
         <p className="mt-2 text-sm text-muted-foreground">
           Nossa rede de fibra atende os principais bairros da cidade. Consulte a
           viabilidade técnica da sua rua pelo WhatsApp:
         </p>
         <ul className="mt-4 flex flex-wrap gap-2">
-          {BAIRROS_MEDIANEIRA.map((bairro) => (
+          {BAIRROS_SANTA_HELENA.map((bairro) => (
             <li
               key={bairro}
               className="rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground"

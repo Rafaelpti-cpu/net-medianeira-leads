@@ -2,11 +2,11 @@ export const WHATSAPP_NUMBER = "554535591665";
 export const PHONE_DISPLAY = "(45) 3559-1665";
 export const PHONE_TEL = "+554535591665";
 export const UTM_PARAMS =
-  "utm_source=google&utm_medium=cpc&utm_campaign=medianeira_internet";
+  "utm_source=google&utm_medium=cpc&utm_campaign=santa_helena_internet";
 export const DEFAULT_MESSAGE =
-  "Olá! Vim pela página de Medianeira e quero contratar com a 1ª mensalidade grátis.";
+  "Olá! Vim pela página de Santa Helena e quero contratar com a 1ª mensalidade grátis.";
 export const OFFER_DISCLAIMER =
-  "Promoção válida para novos clientes em Medianeira, na contratação pela página, com fidelidade de 12 meses. Válida até 30/09/2026.";
+  "Promoção válida para novos clientes em Santa Helena, na contratação pela página, com fidelidade de 12 meses. Válida até 30/09/2026.";
 
 export function buildWhatsAppLink(message: string) {
   const encoded = encodeURIComponent(message);

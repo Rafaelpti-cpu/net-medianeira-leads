@@ -8,17 +8,17 @@ import { buildWhatsAppLink, trackLead } from "@/lib/lead";
 
 const BAIRROS = [
   "Centro",
-  "São Cristóvão",
-  "Belo Horizonte",
-  "Condá",
   "Cidade Alta",
-  "Frimesa",
-  "Nazaré",
-  "Ipê",
-  "Jardim Irene",
-  "Independência",
-  "Itaipu",
-  "Panorâmico",
+  "Cidade Nova",
+  "São Luís",
+  "Vila Rica",
+  "Jardim Acácia",
+  "Jardim Floresta",
+  "Alto Alegre",
+  "Bela Vista",
+  "Moreninha",
+  "Navegantes",
+  "Loteamento Alvorada",
 ];
 
 function formatPhone(value: string) {

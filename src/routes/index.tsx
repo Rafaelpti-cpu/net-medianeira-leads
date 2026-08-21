@@ -13,7 +13,6 @@ import {
   Headphones,
   Clock,
   MapPin,
-  ShieldCheck,
   MessageCircle,
   Phone,
   Check,

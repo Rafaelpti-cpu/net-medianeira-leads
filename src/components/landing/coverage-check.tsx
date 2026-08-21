@@ -10,15 +10,21 @@ const BAIRROS = [
   "Centro",
   "Cidade Alta",
   "Cidade Nova",
-  "São Luís",
+  "Vila Nova",
   "Vila Rica",
+  "São Luís",
   "Jardim Acácia",
   "Jardim Floresta",
   "Alto Alegre",
   "Bela Vista",
   "Moreninha",
   "Navegantes",
+  "Marinas",
+  "Parque Verde",
+  "Terra das Águas",
   "Loteamento Alvorada",
+  "BNH",
+  "Conjunto Padre Martinho",
 ];
 
 function formatPhone(value: string) {

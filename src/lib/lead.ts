@@ -6,7 +6,7 @@ export const UTM_PARAMS =
 export const DEFAULT_MESSAGE =
   "Olá! Vim pela página de Santa Helena e quero contratar com a 1ª mensalidade grátis.";
 export const OFFER_DISCLAIMER =
-  "Promoção válida para novos clientes em Santa Helena, na contratação pela página, com fidelidade de 12 meses. Válida até 30/09/2026.";
+  "Promoção válida para novos clientes em Santa Helena, na contratação pela página, com fidelidade de 12 meses.";
 
 export function buildWhatsAppLink(message: string) {
   const encoded = encodeURIComponent(message);

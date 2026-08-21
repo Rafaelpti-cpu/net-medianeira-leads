@@ -13,11 +13,12 @@ import {
   Headphones,
   Clock,
   MapPin,
-  ShieldCheck,
   MessageCircle,
   Phone,
   Check,
+  Star,
 } from "lucide-react";
+import lojaAsset from "@/assets/loja-portal-itaipu.png.asset.json";
 import { WhatsAppLink } from "@/components/landing/cta-link";
 import { CoverageCheck } from "@/components/landing/coverage-check";
 import { Testimonials } from "@/components/landing/testimonials";
@@ -449,29 +450,23 @@ function BenefitsSection() {
 }
 
 function TrustSection() {
-  const items = [
-    {
-      icon: ShieldCheck,
-      title: "20 anos de experiência",
-      description: "Referência no oeste do Paraná em telecomunicações.",
-    },
-    {
-      icon: MapPin,
-      title: "Rede nova em Santa Helena",
-      description: "Infraestrutura moderna e de alta capacidade para a cidade.",
-    },
-    {
-      icon: Phone,
-      title: "Atendimento local",
-      description: "Fale com quem conhece a região e resolve com agilidade.",
-    },
-  ];
-
   return (
     <section className="bg-brand-dark px-4 py-16 text-white">
       <div className="container mx-auto max-w-6xl">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-          <div>
+          <div className="order-1 lg:order-none">
+            <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
+              <img
+                src={lojaAsset.url}
+                alt="Loja Portal Itaipu em Santa Helena/PR"
+                width={817}
+                height={384}
+                loading="lazy"
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="order-2 lg:order-none">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
               Provedor local, tecnologia de ponta
             </h2>
@@ -509,24 +504,40 @@ function TrustSection() {
                 </a>
               </Button>
             </div>
-          </div>
-          <div className="grid gap-4">
-            {items.map((item) => (
-              <div
-                key={item.title}
-                className="flex gap-4 rounded-2xl bg-white/10 p-5 backdrop-blur"
-              >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-magenta">
-                  <item.icon className="h-5 w-5 text-white" />
+
+            <div className="mt-6 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+              <h3 className="text-lg font-bold">Visite nossa loja em Santa Helena</h3>
+              <div className="mt-4 space-y-3 text-white/80">
+                <div className="flex items-start gap-3">
+                  <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-brand-magenta" />
+                  <span>R. Paraguai, 1161 - Sala 01 - Centro, Santa Helena/PR</span>
                 </div>
-                <div>
-                  <h3 className="font-bold">{item.title}</h3>
-                  <p className="mt-1 text-sm text-white/80">
-                    {item.description}
-                  </p>
+                <div className="flex items-start gap-3">
+                  <Clock className="mt-0.5 h-5 w-5 shrink-0 text-brand-magenta" />
+                  <span>Segunda a sexta, 8h às 11h30 e 13h30 às 18h; sábado, 8h às 12h</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  <span className="font-bold text-white">5,0</span>
+                  <span className="text-sm text-white/70">no Google</span>
                 </div>
               </div>
-            ))}
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="mt-5 h-12 w-full gap-2 border-white/30 bg-transparent px-6 font-bold text-white hover:bg-white/10 hover:text-white sm:w-auto"
+              >
+                <a
+                  href="https://maps.app.goo.gl/Edi5WuhsNdoYTv327"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MapPin className="h-5 w-5" />
+                  Ver no Google Maps
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
